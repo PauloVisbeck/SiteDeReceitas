@@ -17,3 +17,13 @@
     padding-left: 100px;
     font-size: 20px;
 }
+#subtitulo{
+    color: blue ;
+    font-weight: bold;    
+}
+#subtitulo2{
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-left: 50px;
+}
