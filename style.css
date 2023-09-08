@@ -27,3 +27,93 @@
     font-weight: bold;
     padding-left: 50px;
 }
+/*============================================================*/
+/*          Abaixo são layouts usados na tela cadastro        */
+/*============================================================*/
+.titulo{
+    color: red ;
+    font-weight: bold;    
+}
+.nome{
+    color: blue ;
+    font-weight: bold;
+    display: block;
+}
+.idade{
+    color: blue ;
+    font-weight: bold;
+    display: block;
+}
+.uf{
+    color: blue ;
+    font-weight: bold;
+    display: block;
+}
+.estadoCivil{
+    color: blue ;
+    font-weight: bold;
+    display: block;
+}
+.idiomas{
+    color: blue ;
+    font-weight: bold;
+    display: block;
+}
+.cidadeNasc{
+    color: blue ;
+    font-weight: bold;
+    display: block;
+}
+.endereco{
+    color: blue ;
+    font-weight: bold;
+    display: block;
+}
+.numero{
+    color: blue ;
+    font-weight: bold;
+    display: block;
+}
+.cep{
+    color: blue ;
+    font-weight: bold;
+    display: block;
+}
+.elementos-na-linha01{
+    display: inline-block;
+    vertical-align: top; /* Isso alinhará os elementos uf e cidadeNasc verticalmente*/
+    margin-right: 150px;
+}
+.elementos-na-linha02{
+    display: inline-block;
+    vertical-align: top; /* Isso alinhará os elementos uf e cidadeNasc verticalmente*/
+    margin-right: 165px;
+}
+.containerBotoes {
+    display: flex;    
+    justify-content: center;    
+    margin-top: 10px;
+}
+.botao {
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.botaoInput {
+    padding-right: 10px;
+}
+.fieldsetCadastro{
+    border-radius: 20px;
+    background-color: rgba(29, 111, 234, 0.568);
+}
+.fieldsetDadosPessoais{
+    border-radius: 20px;
+    background-color: white;
+}
+.fieldsetDadosEndereco{
+    border-radius: 20px;
+    background-color: white;
+}
+.espacoLabels{
+    margin-bottom: 3px;
+}

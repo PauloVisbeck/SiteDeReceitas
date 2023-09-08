@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Testes de html</title>
+</head>
+<body>
+    <div>
+        <fieldset class="fieldsetCadastro">
+            <legend class="titulo">Cadastro</legend>
+            <fieldset class="fieldsetDadosPessoais">
+                <legend class="titulo">Dados Pessoais</legend>
+                <div class="espacoLabels">
+                    <label class="nome" for="nome">Informe nome</label>
+                    <input type="text" placeholder="Informe seu nome aqui">
+                </div>
+                 <div class="espacoLabels">                              
+                    <label class="idade" for="idade">Informe Data de Nascimento</label>
+                    <input type="date">
+                </div>
+                <!--A label uf e a label cidadeNasc estão em div separadas para que sejam exibidas lado a lado, conforme layout definido através do CSS-->
+                <div class="elementos-na-linha01">
+                    <div class="espacoLabels">
+                        <label class="uf" for="uf">Selecione UF de Nascimento</label>
+                        <select name="uf" id="uf">
+                            <option value="em branco">---</option>
+                            <option value="PR">Paraná</option>                
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                        </select>
+                    </div>
+
+                    <div class="espacoLabels">
+                        <label class="estadoCivil" for="estadoCivil">Informe estado civil: </label>
+                        <input type="radio" name="ec" id="casado" value="Casado" />
+                        <label for="casado">Casado</label>
+                        <input type="radio" name="ec" id="solteiro" value="Solteiro" checked/> <!--A opção checked deixa o solteiro setado-->
+                        <label for="solteiro">Solteiro</label>                                 <!--Tirando essa opção ambos inicim em branco-->
+                    </div>                                
+                                        
+                    <label class="idiomas" for="idiomas">Informe seus idiomas: </label>
+                    <input type="checkbox"> <label for="idiomas">Português (nativo)</label><br>
+                    <input type="checkbox"> <label for="idiomas">Inglês</label><br>
+                    <input type="checkbox"> <label for="idiomas">Espanhol</label><br>
+                    <input type="checkbox"> <label for="idiomas">Francês</label><br>
+                    <input type="checkbox"> <label for="idiomas">Alemão</label><br>
+                    <input type="checkbox"> <label for="idiomas">Italiano</label><br>
+                    <input type="checkbox"> <label for="idiomas">Outros</label><br>
+                </div>
+                <div class="elementos-na-linha01">
+                    <label class="cidadeNasc" for="cidadeNasc">Informe Cidade Nascimento</label>
+                    <input class="botaoInput" type="text" placeholder="Digite nascimento aqui" >                
+                </div>
+            </fieldset>
+            <br>
+            <fieldset class="fieldsetDadosEndereco">
+                <legend class="titulo">Dados de Endereço</legend>
+                <div class="elementos-na-linha02">
+                    <div class="espacoLabels">
+                        <label class="endereco" for="endereco">Informe endereço</label>
+                        <input type="text" placeholder="Informe seu endereço aqui">
+                    </div>
+                    <div class="espacoLabels">
+                        <label class="cep" for="cep">Informe número</label>
+                        <input type="number" placeholder="Informe seu Cep aqui">
+                    </div>
+                </div>
+                <div class="elementos-na-linha02">
+                    <label class="numero" for="numero">Informe número</label>
+                    <input type="number" placeholder="Informe nº da residência aqui">
+                </div>
+            </fieldset>
+            <div class="containerBotoes">
+                <input class="botao" type="submit" value="Gravar">
+                <input class="botao" type="reset" value="Cancelar">
+            </div>            
+        </fieldset>       
+    </div>
+    <br>
+    <a href="index.html">Voltar para Menu de Receitas</a>
+</body>
+</html>
