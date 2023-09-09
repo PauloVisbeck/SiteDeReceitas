@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Testes de html</title>
+    <title>Receitas Fáceis</title>
 </head>
 <body>
     <div>
@@ -14,11 +14,11 @@
                 <legend class="titulo">Dados Pessoais</legend>
                 <div class="espacoLabels">
                     <label class="nome" for="nome">Informe nome</label>
-                    <input type="text" placeholder="Informe seu nome aqui">
+                    <input type="text" placeholder="Informe seu nome aqui" id="nome">
                 </div>
                  <div class="espacoLabels">                              
                     <label class="idade" for="idade">Informe Data de Nascimento</label>
-                    <input type="date">
+                    <input type="date" id="idade">
                 </div>
                 <!--A label uf e a label cidadeNasc estão em div separadas para que sejam exibidas lado a lado, conforme layout definido através do CSS-->
                 <div class="elementos-na-linha01">
@@ -36,10 +36,10 @@
                         <label class="estadoCivil" for="estadoCivil">Informe estado civil: </label>
                         <input type="radio" name="ec" id="casado" value="Casado" />
                         <label for="casado">Casado</label>
-                        <input type="radio" name="ec" id="solteiro" value="Solteiro" checked/> <!--A opção checked deixa o solteiro setado-->
-                        <label for="solteiro">Solteiro</label>                                 <!--Tirando essa opção ambos inicim em branco-->
-                    </div>                                
-                                        
+                        <input type="radio" name="ec" id="solteiro" value="Solteiro" checked/> <!--A opção checked deixa o solteiro-->
+                        <label for="solteiro">Solteiro</label>                                 <!--setado. Tirando essa opção ambos--> 
+                    </div>                                                                     <!--inicim em branco-->
+                    
                     <label class="idiomas" for="idiomas">Informe seus idiomas: </label>
                     <input type="checkbox"> <label for="idiomas">Português (nativo)</label><br>
                     <input type="checkbox"> <label for="idiomas">Inglês</label><br>
@@ -73,12 +73,15 @@
                 </div>
             </fieldset>
             <div class="containerBotoes">
-                <input class="botao" type="submit" value="Gravar">
+                <!--Chamada da função validaDados declarada no arquivo script.js-->
+                <input class="botao" onclick="validaDados()" type="submit" value="Gravar">
                 <input class="botao" type="reset" value="Cancelar">
             </div>            
         </fieldset>       
     </div>
     <br>
-    <a href="index.html">Voltar para Menu de Receitas</a>
+    <a href="index.html">Voltar para Receitas</a>
+    <!--Link que aponta para o arquivo script.js, chamando as funções JavaScript do mesmo-->
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
