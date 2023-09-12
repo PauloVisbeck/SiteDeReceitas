@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,91 @@
     <link rel="stylesheet" href="style.css">
     <title>Receitas Fáceis</title>
 </head>
+
 <body>
-    <!--Imagem de fundo da tela Menu de Receitas (index)-->
+    <!--body é toda área da página (fundo)-->
     <style>
-        body{
-            background-image: url(./imagens/fundo001.jfif); 
+        body {
+            /*Imagem de fundo da tela Menu de Receitas (index)*/
+            background-image: url(./imagens/fundo001.jfif);
+        }
+
+        ul {
+            /*Comando que retira o marcador ('bolinha') da frente da lista*/
+            list-style-type: none;
+        }
+
+        li {
+            display: inline;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        a {
+            /*Retira o aspecto de link das palavras, porém continua sendo link*/
+            text-decoration: none;
+            /*Faz com que o cursor não fique uma mãozinha ao colocar sobre o link*/
+            cursor: default;
+        }
+
+        .menu {
+            position: relative;
+            display: inline-block;
+            background-color: bisque;
+            border: 1px solid gray;
+            font-weight: bold;
+            color: blueviolet;
+
+        }
+
+        .menu:hover .sub-menu {
+            display: block;
+        }
+
+        .sub-menu {
+            /*Faz com que a posição do sub-menu fique abaixo do menu*/
+            position: absolute;
+            display: none;
+            width: 140px;
+        }
+
+        /*Define que quando estiver navegando no sub-menu o cursor ficará uma mãozinha*/
+        .sub-menu a {
+            cursor: pointer;
         }
     </style>
-    <h1 class="centro">Menu de Receitas</h1>
-    <!--O id="lista" está definido dentro do style.css e tem definido a posição do texto-->
-    <ul id="lista">
-        <li>
-            <a href="boloDeLaranja.html">Bolo de Laranja</a>
-        </li>
-        <!--O br serve para quebrar a linha e dar um espaçamento-->
-        <br>
-        <li>
-            <a href="boloDeLimao.html">Bolo de Limão</a>
-        </li>
-        <br>
-        <br>
-        <li>
-            <a href="cadastro.html">Cadastre-se!!!</a>
-        </li>
+    <h1 class="centro">Receitas Fáceis e Práticas</h1>
 
-    </ul>
-    
-    
+    <nav>
+        <!--O id="lista" está definido dentro do style.css e tem definido a posição e formato do texto do menu-->
+        <ul id="lista">
+
+            <li class="menu"><a href="#">Cadastre-se</a>
+                <div class="sub-menu">
+                    <a href="#">Grupo wpp</a>
+                    <a href="cadastro.html">Seja Membro</a>
+                </div>
+            </li>
+
+            <li class="menu"><a href="#">Bolos e Tortas</a>
+                <div class="sub-menu">
+                    <a href="#">Cuca de Farofa</a>
+                    <a href="boloDeLaranja.html">Bolo de Laranja</a>
+                    <a href="boloDeLimao.html">Bolo de Limão</a>
+                </div>
+            </li>
+
+            <li class="menu"><a href="#">Sobre</a>
+                <div class="sub-menu">
+                    <a href="#">Cursos</a>
+                    <a href="#">Elogios</a>
+                    <a href="#">Reclamações</a>
+                    <a href="#">Sugestões</a>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
 </body>
+
 </html>

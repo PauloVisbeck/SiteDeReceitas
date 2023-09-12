@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Receitas Fáceis</title>
+    <title>Testes de html</title>
 </head>
 <body>
     <div>
@@ -16,12 +16,10 @@
                     <label class="nome" for="nome">Informe nome</label>
                     <input type="text" placeholder="Informe seu nome aqui" id="nome">
                 </div>
-                 <div class="espacoLabels">                              
-                    <label class="idade" for="idade">Informe Data de Nascimento</label>
-                    <input type="date" id="idade">
-                </div>
-                <!--A label uf e a label cidadeNasc estão em div separadas para que sejam exibidas lado a lado, conforme layout definido através do CSS-->
-                <div class="elementos-na-linha01">
+                <div class="elementos-na-linha01">                                             
+                    <label class="nascimento" for="nascimento">Informe Data de Nascimento</label>
+                    <input type="date" id="nascimento">               
+                    <!--A label uf e a label cidadeNasc estão em div separadas para que sejam exibidas lado a lado, conforme layout definido através do CSS-->                
                     <div class="espacoLabels">
                         <label class="uf" for="uf">Selecione UF de Nascimento</label>
                         <select name="uf" id="uf">
@@ -49,10 +47,14 @@
                     <input type="checkbox"> <label for="idiomas">Italiano</label><br>
                     <input type="checkbox"> <label for="idiomas">Outros</label><br>
                 </div>
+                
                 <div class="elementos-na-linha01">
+                    <label class="idade" for="idade">Informe Idade</label>
+                    <input class="botaoInput" type="number" id="idade" placeholder="Digite sua idade aqui" >                     
                     <label class="cidadeNasc" for="cidadeNasc">Informe Cidade Nascimento</label>
                     <input class="botaoInput" type="text" placeholder="Digite nascimento aqui" >                
                 </div>
+
             </fieldset>
             <br>
             <fieldset class="fieldsetDadosEndereco">
@@ -79,8 +81,10 @@
             </div>            
         </fieldset>       
     </div>
+    <!--O comando 'br' cria um espaçamento (quebra linha) na tela como se fosse um Enter-->
     <br>
-    <a href="index.html">Voltar para Receitas</a>
+    <a href="index.html">Página principal</a>
+
     <!--Link que aponta para o arquivo script.js, chamando as funções JavaScript do mesmo-->
     <script type="text/javascript" src="script.js"></script>
 </body>

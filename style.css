@@ -39,15 +39,21 @@
     font-weight: bold;
     display: block;
 }
-.idade{
+.nascimento{
     color: blue ;
     font-weight: bold;
     display: block;
+}
+.idade{
+    color: blue ;
+    font-weight: bold;
+    display: block;    
 }
 .uf{
     color: blue ;
     font-weight: bold;
     display: block;
+    margin-top: 5px;
 }
 .estadoCivil{
     color: blue ;
@@ -63,6 +69,7 @@
     color: blue ;
     font-weight: bold;
     display: block;
+    margin-top: 5px; /*Delimita 5 pixels de distância entre o topo do campo Informe Cidade de Nascimento e Informe Idade*/
 }
 .endereco{
     color: blue ;
@@ -81,8 +88,8 @@
 }
 .elementos-na-linha01{
     display: inline-block;
-    vertical-align: top; /* Isso alinhará os elementos uf e cidadeNasc verticalmente*/
-    margin-right: 150px;
+    vertical-align:top; /* Isso alinhará os elementos uf e cidadeNasc verticalmente*/
+    margin-right: 150px;    
 }
 .elementos-na-linha02{
     display: inline-block;
@@ -115,5 +122,5 @@
     background-color: white;
 }
 .espacoLabels{
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
